@@ -40,4 +40,9 @@ public class Bedroom {
     public int guestCount() {
         return this.guests.size();
     }
+
+    public void removeGuest() {
+        this.guests.remove(0);
+
+    }
 }

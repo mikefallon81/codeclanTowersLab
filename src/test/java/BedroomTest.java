@@ -65,4 +65,11 @@ public class BedroomTest {
         assertEquals(1, bedroom2.guestCount());
     }
 
+    @Test
+    public void testCanRemoveGuest(){
+        bedroom2.addGuest(guest1);
+        bedroom2.removeGuest();
+        assertEquals(0, bedroom2.guestCount());
+    }
+
 }
